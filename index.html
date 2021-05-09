@@ -12,6 +12,9 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
   <!-- JavaScript -->
   <script src="projectScript.js"></script>
@@ -80,7 +83,7 @@
           <input type="email" name="email" id="contact-email" placeholder="email@example.com" required>
       
           <label for="contact-reason">How can we help?</label>
-          <select name="contact-reason" id="contact-reason">
+          <select name="contact-reason" id="contact-reason" required>
             <option disabled selected value> Select an option </option>
             <option id="opt-order-question">Order Question</option>
             <option id="opt-website-feedback">Website Feedback</option>
@@ -89,12 +92,12 @@
 
           <div id="textarea-order" class="no-display">
             <label for="order-question">Order Question</label>
-            <textarea name="order-question" placeholder="How can we help with your order?" required></textarea>
+            <textarea name="order-question" placeholder="How can we help with your order?"></textarea>
           </div>
 
           <div id="textarea-feedback" class="no-display">
             <label for="feedback">Website Feedback</label>
-            <textarea name="feedback" placeholder="What can we do to improve our website?" required></textarea>
+            <textarea name="feedback" placeholder="What can we do to improve our website?"></textarea>
           </div>
       
           <button type="submit" class="btn-primary">Submit</button>

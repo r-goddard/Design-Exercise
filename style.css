@@ -57,7 +57,6 @@ select {
 .flexbox-header {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     justify-content: space-around;
     align-items: center;
 }
@@ -67,7 +66,6 @@ select {
     width: 100%;
     background-color: var(--header-background) !important;
     margin-bottom: 2rem;
-    /* padding: 0.25rem 0.5rem; */
 }
 
 .header-link {
@@ -207,7 +205,6 @@ select {
 
     .modal-body {
         width: 50%;
-        padding-right: 10rem;
     }
 
     #search-box {
