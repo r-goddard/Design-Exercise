@@ -18,79 +18,92 @@
 </head>
 <body>
 
-  <h1>Help Center</h1>
-
-  <p>We're eager to help! What would you like to do?</p>
-
-  <div class="flex-container">
-    <button type="button" id="btn-suggest" class="btn-primary">Suggest a Product</button>
-    <button type="button" id="btn-contact" class="btn-primary">Contact Us</button>
+  <div id="navbar-top" class="flexbox-header">
+    <img src="https://media.mwstatic.com/images/header/midwayusa-logo-v1.svg" width="160" height="72" class="header-logo-img" alt="MidayUSA logo" aria-hidden="true">
+    <input type="text" name="search-box" id="search-box" placeholder="Search">
+    <div class="flex-container">
+      <img src="media/user-solid.svg" height=20 class="header-icon" alt="Image of a user" aria-hidden="true">
+      <span class="header-link">Account</span>
+    </div>
+    <div class="flex-container">
+      <img src="media/shopping-cart-solid.svg" height=20 class="header-icon" alt="Image of a shopping cart" aria-hidden="true">
+      <span class="header-link">Cart</span>
+    </div>
+    <span id="wish-list" class="header-link">Wish List</span>
+    <span id="help" class="header-link">Help</span>
   </div>
 
-  <div id="modal-suggest" class="modal">
-    <div class="modal-body">
-      <span class="close">&times;</span>
-      <h3>Suggest a Product</h3>
-      <form>
-        <label for="first-name">First name</label><br>
-        <input type="text" name="first-name" id="suggest-fname" max-length="25" placeholder="e.g., Jane" required><br>
-    
-        <label for="last-name">Last name</label><br>
-        <input type="text" name="last-name" id="suggest-lname" max-length="30" placeholder="e.g., Doe" required><br>
-    
-        <label for="email">Email</label><br>
-        <input type="email" name="email" id="suggest-email" placeholder="email@example.com" required><br>
+  <div id="content">
+    <h1>Help Center</h1>
+
+    <p>What would you like to do?</p>
+
+    <div class="flex-container">
+      <button type="button" id="btn-suggest" class="btn-primary">Suggest a Product</button>
+      <button type="button" id="btn-contact" class="btn-primary">Contact Us</button>
+    </div>
+
+    <div id="modal-suggest" class="modal">
+      <div class="modal-body">
+        <span class="close">&times;</span>
+        <h3>Suggest a Product</h3>
+        <form>
+          <label for="first-name">First name</label>
+          <input type="text" name="first-name" id="suggest-fname" max-length="25" placeholder="e.g., Jane" required>
       
-        <label for="product-description">Product Description</label><br>
-        <textarea name="product-description" placeholder="Please describe the type of product you are interested in." required></textarea><br>
-
-        <button type="submit" class="btn-primary">Submit</button>
-      </form>
-    </div>
-  </div>
-
-  <div id="modal-contact" class="modal">
-    <div class="modal-body">
-      <span class="close">&times;</span>
-      <h2>Contact Us</h2>
-      <form>
-        <label for="first-name">First name</label><br>
-        <input type="text" name="first-name" id="contact-fname" max-length="25" placeholder="e.g., Jane" required><br>
-    
-        <label for="last-name">Last name</label><br>
-        <input type="text" name="last-name" id="contact-lname" max-length="30" placeholder="e.g., Doe" required><br>
-    
-        <label for="email">Email</label><br>
-        <input type="email" name="email" id="contact-email" placeholder="email@example.com" required><br>
-    
-        <label for="contact-reason">How can we help?</label><br>
-        <select name="contact-reason" id="contact-reason">
-          <option disabled selected value> Select an option </option>
-          <option id="opt-order-question">Order Question</option>
-          <option id="opt-website-feedback">Website Feedback</option>
-          <option id="opt-find-product">Trouble Finding Product</option>
-        </select>
-
-        <br><br>
-
-        <div id="textarea-order" class="no-display">
-          <label for="order-question">Order Question</label><br>
-          <textarea name="order-question" placeholder="How can we help with your order?" required></textarea><br>
-        </div>
-
-        <div id="textarea-feedback" class="no-display">
-          <label for="feedback">Website Feedback</label><br>
-          <textarea name="feedback" placeholder="What can we do to improve our website?" required></textarea><br>
-        </div>
-
-        <br><br>
-    
-        <!-- TO-DO Make it unsubmittable if drop-down is not index 0 -->
-        <button type="submit" class="btn-primary">Submit</button>
+          <label for="last-name">Last name</label>
+          <input type="text" name="last-name" id="suggest-lname" max-length="30" placeholder="e.g., Doe" required>
+      
+          <label for="email">Email</label>
+          <input type="email" name="email" id="suggest-email" placeholder="email@example.com" required>
         
-      </form>
+          <label for="product-description">Product Description</label>
+          <textarea name="product-description" placeholder="Please describe the type of product you are interested in." required></textarea>
+
+          <button type="submit" class="btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal-contact" class="modal">
+      <div class="modal-body">
+        <span class="close">&times;</span>
+        <h2>Contact Us</h2>
+        <form>
+          <label for="first-name">First name</label>
+          <input type="text" name="first-name" id="contact-fname" max-length="25" placeholder="e.g., Jane" required>
+      
+          <label for="last-name">Last name</label>
+          <input type="text" name="last-name" id="contact-lname" max-length="30" placeholder="e.g., Doe" required>
+      
+          <label for="email">Email</label>
+          <input type="email" name="email" id="contact-email" placeholder="email@example.com" required>
+      
+          <label for="contact-reason">How can we help?</label>
+          <select name="contact-reason" id="contact-reason">
+            <option disabled selected value> Select an option </option>
+            <option id="opt-order-question">Order Question</option>
+            <option id="opt-website-feedback">Website Feedback</option>
+            <option id="opt-find-product">Trouble Finding Product</option>
+          </select>
+
+          <div id="textarea-order" class="no-display">
+            <label for="order-question">Order Question</label>
+            <textarea name="order-question" placeholder="How can we help with your order?" required></textarea>
+          </div>
+
+          <div id="textarea-feedback" class="no-display">
+            <label for="feedback">Website Feedback</label>
+            <textarea name="feedback" placeholder="What can we do to improve our website?" required></textarea>
+          </div>
+      
+          <button type="submit" class="btn-primary">Submit</button>
+          
+        </form>
+      </div>
     </div>
   </div>
+</div>
 
 </body>
 </html>
