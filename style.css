@@ -1,0 +1,167 @@
+/* MidwayUSA Theme Colors */
+:root {
+    --midway-red: #CC0000;
+    --midway-yellow: #ffc930;
+    --midway-blue: #1a20c7;
+    --dark-gray: #262626;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-gray);
+}
+
+p {
+    font-size: 1em;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input, option, textarea {
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 0.75rem;
+    width: 95%;
+}
+
+.btn-primary {
+    background-color: var(--midway-yellow);
+    border: 0px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.no-display {
+    display: none;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    h1 {
+        font-size: 18rem;
+    }
+    
+    h2 {
+        font-size: 16em;
+    }
+    
+    h3 {
+        font-size: 14em;
+    }
+
+    .modal-body {
+        width: 90%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .modal-body {
+        width: 90%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+    body {
+        width: 80%;
+        margin-left: 10%;
+    }
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 1.375em;
+    }
+    
+    h3 {
+        font-size: 1.25em;
+    }
+
+    .modal-body {
+        width: 50%;
+        padding-right: 10rem;
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .modal-body {
+        width: 30%;
+    }
+}
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-body {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 1.25rem 1.5rem;
+    /* width: 80%; Could be more or less, depending on screen size */
+  }
+  
+  /* Close button */
+  .close {
+    color: var(--dark-gray);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--dark-gray);
+    text-decoration: none;
+    cursor: pointer;
+  }
